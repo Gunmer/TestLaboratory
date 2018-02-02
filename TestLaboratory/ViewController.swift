@@ -8,8 +8,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapOnDinamicStackViewButton(_ sender: UIButton) {
-        let viewController = DinamicStackViewController.initFromStoryboard()
-        self.present(viewController, animated: true, completion: nil)
+        let dynamicStackVC = DynamicStackViewController.initFromStoryboard()
+        let navigationController = UINavigationController(rootViewController: dynamicStackVC)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgy-7u-7VY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Stack View Controller-->
+        <scene sceneID="jyP-tL-J5u">
+            <objects>
+                <viewController id="Vgy-7u-7VY" customClass="DynamicStackViewController" customModule="TestLaboratory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkx-2w-Ao3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TGb-yc-fPu">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X6-lU-Wy0">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                        <state key="normal" title="Nueva Vista"/>
+                                        <connections>
+                                            <action selector="didTapOnNewViewButton:" destination="Vgy-7u-7VY" eventType="touchUpInside" id="2fD-ZL-2ea"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-jX-ovc">
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="30"/>
+                                        <state key="normal" title="Cerrar"/>
+                                        <connections>
+                                            <action selector="didTapOnCloseButton:" destination="Vgy-7u-7VY" eventType="touchUpInside" id="1WT-si-Ii2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HML-73-DIC">
+                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Hvc-zZ-8k4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texto dentro del stack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0I-mW-tWx">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hvc-zZ-8k4" firstAttribute="leading" secondItem="HML-73-DIC" secondAttribute="leading" id="6em-58-2dq"/>
+                                    <constraint firstItem="Hvc-zZ-8k4" firstAttribute="top" secondItem="HML-73-DIC" secondAttribute="top" id="EkB-UV-6HJ"/>
+                                    <constraint firstItem="Hvc-zZ-8k4" firstAttribute="width" secondItem="HML-73-DIC" secondAttribute="width" id="ldc-v4-RJT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hvc-zZ-8k4" secondAttribute="bottom" id="n7V-h7-Jyr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hvc-zZ-8k4" secondAttribute="trailing" id="p0p-uc-kw5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TGb-yc-fPu" secondAttribute="bottom" constant="601" id="Mno-8l-qz1"/>
+                            <constraint firstItem="HML-73-DIC" firstAttribute="bottom" secondItem="MFJ-Cw-bT2" secondAttribute="bottom" id="QQn-Hd-3ZO"/>
+                            <constraint firstItem="HML-73-DIC" firstAttribute="top" secondItem="TGb-yc-fPu" secondAttribute="bottom" constant="16" id="UdG-PP-v2j"/>
+                            <constraint firstItem="HML-73-DIC" firstAttribute="leading" secondItem="MFJ-Cw-bT2" secondAttribute="leading" id="YVG-cV-8F5"/>
+                            <constraint firstItem="HML-73-DIC" firstAttribute="trailing" secondItem="MFJ-Cw-bT2" secondAttribute="trailing" id="dPg-Bj-Acq"/>
+                            <constraint firstItem="MFJ-Cw-bT2" firstAttribute="trailing" secondItem="TGb-yc-fPu" secondAttribute="trailing" constant="16" id="h6b-qK-CLD"/>
+                            <constraint firstItem="TGb-yc-fPu" firstAttribute="top" secondItem="MFJ-Cw-bT2" secondAttribute="top" constant="16" id="iYE-76-xvf"/>
+                            <constraint firstItem="TGb-yc-fPu" firstAttribute="leading" secondItem="MFJ-Cw-bT2" secondAttribute="leading" constant="16" id="mtL-97-cUK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MFJ-Cw-bT2"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="stackView" destination="Hvc-zZ-8k4" id="6od-fL-0FY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEW-YC-rjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>

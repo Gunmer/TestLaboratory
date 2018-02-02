@@ -23,7 +23,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-RY-p9l">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <state key="normal" title="Dinamic Stackview"/>
+                                        <state key="normal" title="Dynamic StackView"/>
                                         <connections>
                                             <action selector="didTapOnDinamicStackViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l5y-pr-JHl"/>
                                         </connections>

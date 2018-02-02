@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D12FD1A72B3452FD666DBB1 /* Pods_TestLaboratory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE23A0BD97A35AB37D256A3 /* Pods_TestLaboratory.framework */; };
-		D4ACCF9C2023CB6E002DCFF9 /* DinamicStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACCF9B2023CB6E002DCFF9 /* DinamicStack.storyboard */; };
-		D4ACCF9E2023CBCD002DCFF9 /* DinamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCF9D2023CBCD002DCFF9 /* DinamicStackViewController.swift */; };
+		D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */; };
+		D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */; };
 		D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */; };
 		D4F078A72023C524001976AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F078A62023C524001976AD /* AppDelegate.swift */; };
 		D4F078A92023C524001976AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F078A82023C524001976AD /* ViewController.swift */; };
@@ -22,8 +22,8 @@
 		1EC9A165EF5D76B7AEBF7E12 /* Pods-TestLaboratory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLaboratory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory.debug.xcconfig"; sourceTree = "<group>"; };
 		48363926F9B51353DEE08395 /* Pods-TestLaboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLaboratory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory.release.xcconfig"; sourceTree = "<group>"; };
 		8EE23A0BD97A35AB37D256A3 /* Pods_TestLaboratory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLaboratory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4ACCF9B2023CB6E002DCFF9 /* DinamicStack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DinamicStack.storyboard; sourceTree = "<group>"; };
-		D4ACCF9D2023CBCD002DCFF9 /* DinamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinamicStackViewController.swift; sourceTree = "<group>"; };
+		D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicStack.storyboard; sourceTree = "<group>"; };
+		D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 		D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
 		D4F078A32023C524001976AD /* TestLaboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLaboratory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F078A62023C524001976AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		D4ACCF9A2023CA83002DCFF9 /* DinamicStackView */ = {
 			isa = PBXGroup;
 			children = (
-				D4ACCF9B2023CB6E002DCFF9 /* DinamicStack.storyboard */,
-				D4ACCF9D2023CBCD002DCFF9 /* DinamicStackViewController.swift */,
+				D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */,
+				D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */,
 			);
 			path = DinamicStackView;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F078B12023C524001976AD /* LaunchScreen.storyboard in Resources */,
-				D4ACCF9C2023CB6E002DCFF9 /* DinamicStack.storyboard in Resources */,
+				D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */,
 				D4F078AE2023C524001976AD /* Assets.xcassets in Resources */,
 				D4F078AC2023C524001976AD /* Main.storyboard in Resources */,
 			);
@@ -251,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4ACCF9E2023CBCD002DCFF9 /* DinamicStackViewController.swift in Sources */,
+				D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */,
 				D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */,
 				D4F078A92023C524001976AD /* ViewController.swift in Sources */,
 				D4F078A72023C524001976AD /* AppDelegate.swift in Sources */,
