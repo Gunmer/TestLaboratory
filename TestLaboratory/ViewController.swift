@@ -13,6 +13,11 @@ class ViewController: UIViewController {
         self.present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func didTaoOnLoginInMS(_ sender: UIButton) {
+        let loginInMSVC = LoginInMSViewController.initFromStoryboard()
+        let navigationController = UINavigationController(rootViewController: loginInMSVC)
+        self.present(navigationController, animated: true, completion: nil)
+    }
     
 }
 

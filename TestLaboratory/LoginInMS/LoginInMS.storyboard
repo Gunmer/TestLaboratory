@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tog-JT-ohp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login InMS View Controller-->
+        <scene sceneID="GSr-KP-y8a">
+            <objects>
+                <viewController id="Tog-JT-ohp" customClass="LoginInMSViewController" customModule="TestLaboratory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4GX-Hl-ReF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0Pz-lu-tVy">
+                                <rect key="frame" x="16" y="52" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swR-r0-tvJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="didTapOnLoginButton:" destination="Tog-JT-ohp" eventType="touchUpInside" id="hqE-m9-Wqi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-Y9-Rp2">
+                                        <rect key="frame" x="179.5" y="0.0" width="163.5" height="30"/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="didTapOnLogOut:" destination="Tog-JT-ohp" eventType="touchUpInside" id="Wb4-KT-4Fi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Resultado del login" translatesAutoresizingMaskIntoConstraints="NO" id="dZT-Yn-tFn">
+                                <rect key="frame" x="16" y="98" width="343" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dZT-Yn-tFn" firstAttribute="leading" secondItem="KhL-KA-tFB" secondAttribute="leading" constant="16" id="1kn-jr-eyN"/>
+                            <constraint firstItem="0Pz-lu-tVy" firstAttribute="top" secondItem="KhL-KA-tFB" secondAttribute="top" constant="32" id="Jll-QA-ouD"/>
+                            <constraint firstItem="KhL-KA-tFB" firstAttribute="trailing" secondItem="0Pz-lu-tVy" secondAttribute="trailing" constant="16" id="Nfl-o3-8mC"/>
+                            <constraint firstItem="KhL-KA-tFB" firstAttribute="trailing" secondItem="dZT-Yn-tFn" secondAttribute="trailing" constant="16" id="ONh-kY-hqk"/>
+                            <constraint firstItem="0Pz-lu-tVy" firstAttribute="leading" secondItem="KhL-KA-tFB" secondAttribute="leading" constant="16" id="bS7-oD-UTe"/>
+                            <constraint firstItem="KhL-KA-tFB" firstAttribute="bottom" secondItem="dZT-Yn-tFn" secondAttribute="bottom" constant="16" id="uEQ-89-z3N"/>
+                            <constraint firstItem="dZT-Yn-tFn" firstAttribute="top" secondItem="0Pz-lu-tVy" secondAttribute="bottom" constant="16" id="vqM-MC-osk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KhL-KA-tFB"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="dZT-Yn-tFn" id="Ydf-rS-19P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FE4-zw-UQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="143"/>
+        </scene>
+    </scenes>
+</document>
