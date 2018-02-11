@@ -18,8 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="36d-7K-QEn">
-                                <rect key="frame" x="16" y="36" width="343" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST LABORATORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6g-LC-z4P">
+                                <rect key="frame" x="16" y="52" width="343" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="36d-7K-QEn">
+                                <rect key="frame" x="16" y="122.5" width="343" height="76"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-RY-p9l">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -29,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIo-QT-6Vy">
-                                        <rect key="frame" x="0.0" y="30" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="46" width="343" height="30"/>
                                         <state key="normal" title="Login in Microsoft"/>
                                         <connections>
                                             <action selector="didTaoOnLoginInMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51D-Tj-p5A"/>
@@ -40,9 +46,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="36d-7K-QEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8G9-Bw-CyX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="36d-7K-QEn" secondAttribute="trailing" constant="16" id="Jcz-TK-Bhr"/>
-                            <constraint firstItem="36d-7K-QEn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="fQ2-kI-Vwo"/>
+                            <constraint firstItem="k6g-LC-z4P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XaQ-86-fnf"/>
+                            <constraint firstItem="36d-7K-QEn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="acu-Gj-ygc"/>
+                            <constraint firstItem="k6g-LC-z4P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="kDQ-G7-wqz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k6g-LC-z4P" secondAttribute="trailing" constant="16" id="lS7-Xv-6VV"/>
+                            <constraint firstItem="36d-7K-QEn" firstAttribute="top" secondItem="k6g-LC-z4P" secondAttribute="bottom" constant="32" id="znM-EX-agV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="36d-7K-QEn" secondAttribute="trailing" constant="16" id="zsZ-Lu-m3g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
