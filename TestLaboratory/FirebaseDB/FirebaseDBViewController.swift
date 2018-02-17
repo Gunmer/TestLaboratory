@@ -9,6 +9,8 @@ class FirebaseDBViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Firebase Data Base"
+        
         let tasks = [Task(number: 1, description: "Primera tarea")]
         taskTable.configure(tasks: tasks)
     }

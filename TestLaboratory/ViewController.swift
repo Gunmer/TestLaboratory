@@ -9,19 +9,19 @@ class ViewController: UIViewController {
 
     @IBAction func didTapOnDinamicStackViewButton(_ sender: UIButton) {
         let dynamicStackVC = DynamicStackViewController.initFromStoryboard()
-        let navigationController = UINavigationController(rootViewController: dynamicStackVC)
+        let navigationController = NavigationControllerDefault(rootViewController: dynamicStackVC)
         self.present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func didTaoOnLoginInMS(_ sender: UIButton) {
         let loginInMSVC = LoginInMSViewController.initFromStoryboard()
-        let navigationController = UINavigationController(rootViewController: loginInMSVC)
+        let navigationController = NavigationControllerDefault(rootViewController: loginInMSVC)
         self.present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func didTapOnFirebaseDB(_ sender: UIButton) {
         let firebaseDB = FirebaseDBViewController.initFromStoryboard()
-        let navigationController = UINavigationController(rootViewController: firebaseDB)
+        let navigationController = NavigationControllerDefault(rootViewController: firebaseDB)
         self.present(navigationController, animated: true, completion: nil)
     }
     
