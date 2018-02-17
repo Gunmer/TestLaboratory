@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="36d-7K-QEn">
-                                <rect key="frame" x="16" y="122.5" width="343" height="76"/>
+                                <rect key="frame" x="16" y="122.5" width="343" height="122"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-RY-p9l">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -39,6 +39,13 @@
                                         <state key="normal" title="Login in Microsoft"/>
                                         <connections>
                                             <action selector="didTaoOnLoginInMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51D-Tj-p5A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n80-yM-Q8d">
+                                        <rect key="frame" x="0.0" y="92" width="343" height="30"/>
+                                        <state key="normal" title="Firebase Data Base"/>
+                                        <connections>
+                                            <action selector="didTapOnFirebaseDB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oYZ-c6-4rk"/>
                                         </connections>
                                     </button>
                                 </subviews>

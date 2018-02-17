@@ -19,5 +19,10 @@ class ViewController: UIViewController {
         self.present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func didTapOnFirebaseDB(_ sender: UIButton) {
+        let firebaseDB = FirebaseDBViewController.initFromStoryboard()
+        let navigationController = UINavigationController(rootViewController: firebaseDB)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
 }
-
