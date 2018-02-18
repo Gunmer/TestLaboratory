@@ -7,17 +7,24 @@ class TaskTableView: UITableView {
     
     func configure(tasks: [Task]) {
         self.tasks = tasks
+        
         dataSource = self
+        
+        reloadData()
     }
     
-    func addTask(description: String) {
-        let number = tasks.count + 1
-        let task = Task(number: number, description: description)
+    func addTask(description: String) -> Task {
+        let task = Task()
+        task.number = tasks.count + 1
+        task.description = description
+        
         tasks.append(task)
         
         beginUpdates()
         insertRows(at: [IndexPath(row: tasks.count - 1, section: 0)], with: .automatic)
         endUpdates()
+        
+        return task
     }
 }
 
