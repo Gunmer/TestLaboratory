@@ -10,6 +10,7 @@ class DynamicStackViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Dynamic Stack View"
     }
 
     @IBAction func didTapOnNewViewButton(_ sender: Any) {

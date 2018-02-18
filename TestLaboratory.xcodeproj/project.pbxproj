@@ -14,6 +14,13 @@
 		D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */; };
 		D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */; };
 		D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */; };
+		D4E727F720377D77004C1508 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4E727F620377D77004C1508 /* GoogleService-Info.plist */; };
+		D4E727FA20379503004C1508 /* FirebaseDB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E727F920379503004C1508 /* FirebaseDB.storyboard */; };
+		D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E727FB20382F9A004C1508 /* FirebaseDBViewController.swift */; };
+		D4E7280020382FE9004C1508 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E727FF20382FE9004C1508 /* TaskCell.swift */; };
+		D4E7280220383081004C1508 /* TaskTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7280120383081004C1508 /* TaskTableView.swift */; };
+		D4E7280420383571004C1508 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E7280320383571004C1508 /* Task.swift */; };
+		D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E72805203883A7004C1508 /* NavigationControllerDefault.swift */; };
 		D4F078A72023C524001976AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F078A62023C524001976AD /* AppDelegate.swift */; };
 		D4F078A92023C524001976AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F078A82023C524001976AD /* ViewController.swift */; };
 		D4F078AC2023C524001976AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F078AA2023C524001976AD /* Main.storyboard */; };
@@ -31,6 +38,13 @@
 		D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicStack.storyboard; sourceTree = "<group>"; };
 		D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 		D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		D4E727F620377D77004C1508 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D4E727F920379503004C1508 /* FirebaseDB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirebaseDB.storyboard; sourceTree = "<group>"; };
+		D4E727FB20382F9A004C1508 /* FirebaseDBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDBViewController.swift; sourceTree = "<group>"; };
+		D4E727FF20382FE9004C1508 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		D4E7280120383081004C1508 /* TaskTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableView.swift; sourceTree = "<group>"; };
+		D4E7280320383571004C1508 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		D4E72805203883A7004C1508 /* NavigationControllerDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDefault.swift; sourceTree = "<group>"; };
 		D4F078A32023C524001976AD /* TestLaboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLaboratory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F078A62023C524001976AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F078A82023C524001976AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +115,21 @@
 			isa = PBXGroup;
 			children = (
 				D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */,
+				D4E72805203883A7004C1508 /* NavigationControllerDefault.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D4E727F8203793CD004C1508 /* FirebaseDB */ = {
+			isa = PBXGroup;
+			children = (
+				D4E727F920379503004C1508 /* FirebaseDB.storyboard */,
+				D4E727FB20382F9A004C1508 /* FirebaseDBViewController.swift */,
+				D4E727FF20382FE9004C1508 /* TaskCell.swift */,
+				D4E7280120383081004C1508 /* TaskTableView.swift */,
+				D4E7280320383571004C1508 /* Task.swift */,
+			);
+			path = FirebaseDB;
 			sourceTree = "<group>";
 		};
 		D4F0789A2023C524001976AD = {
@@ -126,6 +153,7 @@
 		D4F078A52023C524001976AD /* TestLaboratory */ = {
 			isa = PBXGroup;
 			children = (
+				D4E727F8203793CD004C1508 /* FirebaseDB */,
 				D4ACCF9F2023D1D7002DCFF9 /* Infrastructure */,
 				D47B9A242025267800776B62 /* LoginInMS */,
 				D4ACCF9A2023CA83002DCFF9 /* DinamicStackView */,
@@ -135,6 +163,7 @@
 				D4F078AD2023C524001976AD /* Assets.xcassets */,
 				D4F078AF2023C524001976AD /* LaunchScreen.storyboard */,
 				D4F078B22023C524001976AD /* Info.plist */,
+				D4E727F620377D77004C1508 /* GoogleService-Info.plist */,
 			);
 			path = TestLaboratory;
 			sourceTree = "<group>";
@@ -205,8 +234,10 @@
 				D47B9A26202526F100776B62 /* LoginInMS.storyboard in Resources */,
 				D4F078B12023C524001976AD /* LaunchScreen.storyboard in Resources */,
 				D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */,
+				D4E727FA20379503004C1508 /* FirebaseDB.storyboard in Resources */,
 				D4F078AE2023C524001976AD /* Assets.xcassets in Resources */,
 				D4F078AC2023C524001976AD /* Main.storyboard in Resources */,
+				D4E727F720377D77004C1508 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,10 +285,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EmojiLog/EmojiLog.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmojiLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -285,10 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4E7280020382FE9004C1508 /* TaskCell.swift in Sources */,
+				D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */,
 				D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */,
+				D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */,
 				D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */,
+				D4E7280220383081004C1508 /* TaskTableView.swift in Sources */,
 				D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */,
 				D4F078A92023C524001976AD /* ViewController.swift in Sources */,
+				D4E7280420383571004C1508 /* Task.swift in Sources */,
 				D4F078A72023C524001976AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
