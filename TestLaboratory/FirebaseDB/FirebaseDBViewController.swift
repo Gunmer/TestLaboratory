@@ -14,6 +14,7 @@ class FirebaseDBViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        taskTable.taskTableViewDelegate = self
         
         firebase = Database.database().reference()
 
@@ -30,6 +31,8 @@ class FirebaseDBViewController: UIViewController {
                 self.taskTable.configure(tasks: tasks)
             }
         })
+        
+        
     }
 
     @IBAction func didTapOnAdd(_ sender: UIButton) {
@@ -40,7 +43,13 @@ class FirebaseDBViewController: UIViewController {
         let task = taskTable.addTask(description: description)
         inputTextField.text = nil
         
-        firebase?.child("tasks").childByAutoId().setValue(task.toJSON())
+        guard let id = firebase?.child("tasks").childByAutoId().key else {
+            fatalError("the firebase id has not been generated")
+        }
+        
+        task.id = id
+        
+        firebase?.child("tasks").child(task.id).setValue(task.toJSON())
     }
     
 }
@@ -55,4 +64,12 @@ extension FirebaseDBViewController: StoryboardViewController {
 
 extension FirebaseDBViewController: Loggable {
     
+}
+
+extension FirebaseDBViewController: TaskTableViewDelegate {
+    
+    func willDeleteTask(task: Task) {
+        firebase?.child("tasks").child(task.id).removeValue()
+    }
+
 }

@@ -3,10 +3,12 @@ import ObjectMapper
 
 class Task: Mappable {
     
+    var id: String
     var number: Int
     var description: String
     
     init() {
+        id = ""
         number = 0
         description = ""
     }
@@ -16,6 +18,7 @@ class Task: Mappable {
     }
     
     func mapping(map: Map) {
+        id <- map["id"]
         number <- map["number"]
         description <- map["description"]
     }
