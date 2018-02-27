@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8D12FD1A72B3452FD666DBB1 /* Pods_TestLaboratory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE23A0BD97A35AB37D256A3 /* Pods_TestLaboratory.framework */; };
+		D40EC6FE2042D74500DBFF96 /* TimeZoneMVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC6FD2042D74500DBFF96 /* TimeZoneMVPViewController.swift */; };
+		D40EC7002042DF9900DBFF96 /* TimeZonePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC6FF2042DF9900DBFF96 /* TimeZonePicker.swift */; };
+		D40EC7022043139600DBFF96 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC7012043139600DBFF96 /* Presenter.swift */; };
+		D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */; };
+		D40EC706204354D300DBFF96 /* PresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC705204354D300DBFF96 /* PresenterView.swift */; };
+		D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */; };
 		D47B9A23202525DB00776B62 /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47B9A22202525DB00776B62 /* MSAL.framework */; };
 		D47B9A26202526F100776B62 /* LoginInMS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B9A25202526F100776B62 /* LoginInMS.storyboard */; };
 		D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9A272025282E00776B62 /* LoginInMSViewController.swift */; };
@@ -32,6 +38,12 @@
 		1EC9A165EF5D76B7AEBF7E12 /* Pods-TestLaboratory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLaboratory.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory.debug.xcconfig"; sourceTree = "<group>"; };
 		48363926F9B51353DEE08395 /* Pods-TestLaboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLaboratory.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory.release.xcconfig"; sourceTree = "<group>"; };
 		8EE23A0BD97A35AB37D256A3 /* Pods_TestLaboratory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestLaboratory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40EC6FD2042D74500DBFF96 /* TimeZoneMVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneMVPViewController.swift; sourceTree = "<group>"; };
+		D40EC6FF2042DF9900DBFF96 /* TimeZonePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZonePicker.swift; sourceTree = "<group>"; };
+		D40EC7012043139600DBFF96 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneMVPPresenter.swift; sourceTree = "<group>"; };
+		D40EC705204354D300DBFF96 /* PresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterView.swift; sourceTree = "<group>"; };
+		D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeZoneMVP.storyboard; sourceTree = "<group>"; };
 		D47B9A22202525DB00776B62 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
 		D47B9A25202526F100776B62 /* LoginInMS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginInMS.storyboard; sourceTree = "<group>"; };
 		D47B9A272025282E00776B62 /* LoginInMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInMSViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +97,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D42D8FB82042B7DB00A7824B /* TimeZoneMVP */ = {
+			isa = PBXGroup;
+			children = (
+				D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */,
+				D40EC6FD2042D74500DBFF96 /* TimeZoneMVPViewController.swift */,
+				D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */,
+				D40EC6FF2042DF9900DBFF96 /* TimeZonePicker.swift */,
+			);
+			path = TimeZoneMVP;
+			sourceTree = "<group>";
+		};
 		D47B9A242025267800776B62 /* LoginInMS */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +139,8 @@
 			children = (
 				D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */,
 				D4E72805203883A7004C1508 /* NavigationControllerDefault.swift */,
+				D40EC7012043139600DBFF96 /* Presenter.swift */,
+				D40EC705204354D300DBFF96 /* PresenterView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -153,6 +178,7 @@
 		D4F078A52023C524001976AD /* TestLaboratory */ = {
 			isa = PBXGroup;
 			children = (
+				D42D8FB82042B7DB00A7824B /* TimeZoneMVP */,
 				D4E727F8203793CD004C1508 /* FirebaseDB */,
 				D4ACCF9F2023D1D7002DCFF9 /* Infrastructure */,
 				D47B9A242025267800776B62 /* LoginInMS */,
@@ -236,6 +262,7 @@
 				D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */,
 				D4E727FA20379503004C1508 /* FirebaseDB.storyboard in Resources */,
 				D4F078AE2023C524001976AD /* Assets.xcassets in Resources */,
+				D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */,
 				D4F078AC2023C524001976AD /* Main.storyboard in Resources */,
 				D4E727F720377D77004C1508 /* GoogleService-Info.plist in Resources */,
 			);
@@ -325,13 +352,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E7280020382FE9004C1508 /* TaskCell.swift in Sources */,
+				D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */,
 				D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */,
 				D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */,
 				D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */,
+				D40EC706204354D300DBFF96 /* PresenterView.swift in Sources */,
+				D40EC7002042DF9900DBFF96 /* TimeZonePicker.swift in Sources */,
 				D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */,
+				D40EC6FE2042D74500DBFF96 /* TimeZoneMVPViewController.swift in Sources */,
 				D4E7280220383081004C1508 /* TaskTableView.swift in Sources */,
 				D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */,
 				D4F078A92023C524001976AD /* ViewController.swift in Sources */,
+				D40EC7022043139600DBFF96 /* Presenter.swift in Sources */,
 				D4E7280420383571004C1508 /* Task.swift in Sources */,
 				D4F078A72023C524001976AD /* AppDelegate.swift in Sources */,
 			);
