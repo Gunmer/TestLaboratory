@@ -22,6 +22,15 @@ class TimeZonePicker: UIPickerView {
         dataSource = self
     }
     
+    func setTimeZone(_ timeZone: TimeZone) {
+        guard let row = timeZones.index(where: { $0.abbreviation() == timeZone.abbreviation() }) else {
+            return
+        }
+        
+        self.timeZone = timeZone
+        self.selectRow(row, inComponent: 0, animated: true)
+    }
+    
 }
 
 extension TimeZonePicker: UIPickerViewDataSource {

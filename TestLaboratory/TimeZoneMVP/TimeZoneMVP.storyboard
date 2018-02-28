@@ -21,61 +21,66 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXm-mq-X5s">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cfj-VC-IZ4">
-                                        <rect key="frame" x="16" y="16" width="320" height="776"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cfj-VC-IZ4">
+                                        <rect key="frame" x="16" y="16" width="320" height="824"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 1: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-rZ-Lc9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 1 y fecha 2 son:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-wm-tdf">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/02/2018 10:26 +0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-wU-5Oy">
-                                                <rect key="frame" x="0.0" y="32" width="320" height="20.5"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Equals" translatesAutoresizingMaskIntoConstraints="NO" id="T0k-uA-HfG">
+                                                <rect key="frame" x="0.0" y="40" width="320" height="137"/>
+                                                <color key="tintColor" red="0.0" green="1" blue="0.051855699339533601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 1: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-rZ-Lc9">
+                                                <rect key="frame" x="0.0" y="193" width="320" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/02/2018 10:26 +0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-wU-5Oy">
+                                                <rect key="frame" x="0.0" y="233" width="320" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-7M-xVx">
-                                                <rect key="frame" x="0.0" y="60.5" width="320" height="30"/>
+                                                <rect key="frame" x="0.0" y="269.5" width="320" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-uv-ECA">
-                                                <rect key="frame" x="0.0" y="98.5" width="320" height="24"/>
+                                                <rect key="frame" x="0.0" y="315.5" width="320" height="24"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/02/2018 10:26 +0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-gK-Rde">
-                                                <rect key="frame" x="0.0" y="130.5" width="320" height="20.5"/>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/02/2018 10:26 +0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHF-gK-Rde">
+                                                <rect key="frame" x="0.0" y="355.5" width="320" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-3H-7Vh">
-                                                <rect key="frame" x="0.0" y="159" width="320" height="216"/>
-                                                <date key="date" timeIntervalSinceReferenceDate="541243577.83048999">
-                                                    <!--2018-02-25 99:26:17 a. m. +0000-->
-                                                </date>
-                                                <connections>
-                                                    <action selector="didChangeDatePicker:" destination="xAd-hH-Ucv" eventType="valueChanged" id="5ls-fx-Ofq"/>
-                                                </connections>
-                                            </datePicker>
-                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-aB-yqJ" customClass="TimeZonePicker" customModule="TestLaboratory" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="383" width="320" height="216"/>
-                                            </pickerView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 1 y fecha 2 son:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-wm-tdf">
-                                                <rect key="frame" x="0.0" y="607" width="320" height="24"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Equals" translatesAutoresizingMaskIntoConstraints="NO" id="T0k-uA-HfG">
-                                                <rect key="frame" x="0.0" y="639" width="320" height="137"/>
-                                                <color key="tintColor" red="0.0" green="1" blue="0.051855699339533601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-YP-BPs">
+                                                <rect key="frame" x="0.0" y="392" width="320" height="432"/>
+                                                <subviews>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-3H-7Vh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                        <date key="date" timeIntervalSinceReferenceDate="541243577.83048999">
+                                                            <!--2018-02-25 99:26:17 a. m. +0000-->
+                                                        </date>
+                                                        <connections>
+                                                            <action selector="didChangeDatePicker:" destination="xAd-hH-Ucv" eventType="valueChanged" id="5ls-fx-Ofq"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-aB-yqJ" customClass="TimeZonePicker" customModule="TestLaboratory" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="216" width="320" height="216"/>
+                                                    </pickerView>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
