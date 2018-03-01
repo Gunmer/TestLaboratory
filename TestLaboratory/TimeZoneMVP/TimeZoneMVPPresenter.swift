@@ -2,6 +2,7 @@
 import Foundation
 
 protocol TimeZoneMVPPresenter: Presenter, TimeZonePickerDelegate {
+    func didChangeDateField()
     func didChangeDatePicker(date: Date)
 }
 
@@ -36,14 +37,23 @@ class TimeZoneMVPPresenterDefault: PresenterBase<TimeZoneMVPView> {
 
 extension TimeZoneMVPPresenterDefault: TimeZoneMVPPresenter {
     
+    func didChangeDateField() {
+        guard let date1 = view.date1, let date = view.date2, let timeZone = view.timeZone else {
+            view.showErrorInDate1()
+            return
+        }
+        
+        view.clearError()
+        let date2 = buildDate2(date: date, timeZone: timeZone)
+        compare(date1: date1, date2: date2)
+    }
+    
     func didChangeDatePicker(date: Date) {
         guard let date1 = view.date1, let timeZone = view.timeZone else {
             return
         }
         
-        var componets = Calendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date)
-        componets.timeZone = timeZone
-        let date2 = Calendar.current.date(from: componets)!
+        let date2 = buildDate2(date: date, timeZone: timeZone)
         compare(date1: date1, date2: date2)
     }
     
@@ -52,10 +62,14 @@ extension TimeZoneMVPPresenterDefault: TimeZoneMVPPresenter {
             return
         }
         
+        let date2 = buildDate2(date: date, timeZone: timeZone)
+        compare(date1: date1, date2: date2)
+    }
+    
+    private func buildDate2(date: Date, timeZone: TimeZone) -> Date {
         var componets = Calendar.current.dateComponents([.day, .month, .year, .hour, .minute], from: date)
         componets.timeZone = timeZone
-        let date2 = Calendar.current.date(from: componets)!
-        compare(date1: date1, date2: date2)
+        return Calendar.current.date(from: componets)!
     }
     
 }

@@ -6,6 +6,8 @@ protocol TimeZoneMVPView {
     var date2: Date? { get set }
     var timeZone: TimeZone? { get set }
     
+    func showErrorInDate1()
+    func clearError()
     func showEqualsInmage()
     func showGreatThanInmage()
     func showLessThanInmage()
@@ -31,6 +33,10 @@ class TimeZoneMVPViewController: ViewControllerWithPresenter<TimeZoneMVPPresente
     override func viewDidLoad() {
         super.viewDidLoad()
         timeZonePicker.pickerDelegate = presenter
+    }
+    
+    @IBAction func didChangeDateField(_ sender: UITextField) {
+        presenter.didChangeDateField()
     }
     
     @IBAction func didChangeDatePicker(_ sender: UIDatePicker) {
@@ -95,6 +101,14 @@ extension TimeZoneMVPViewController: TimeZoneMVPView {
         df.dateFormat = "dd/MM/yyyy HH:mm Z"
         
         return df
+    }
+    
+    func showErrorInDate1() {
+        date1TextField.textColor = .red
+    }
+    
+    func clearError() {
+        date1TextField.textColor = .black
     }
     
     func showEqualsInmage() {

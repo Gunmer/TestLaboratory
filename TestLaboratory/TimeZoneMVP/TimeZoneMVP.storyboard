@@ -53,6 +53,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="didChangeDateField:" destination="xAd-hH-Ucv" eventType="editingChanged" id="ZCw-cw-d6V"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
