@@ -2,8 +2,6 @@
 import Foundation
 
 protocol TimeZoneMVPPresenter: Presenter, TimeZonePickerDelegate {
-    func didTapOnDate1Label()
-    func didTapOnDate2Label()
     func didChangeDatePicker(date: Date)
 }
 
@@ -15,17 +13,10 @@ class TimeZoneMVPPresenterDefault: PresenterBase<TimeZoneMVPView> {
         let date1 = Date()
         let date2 = Date()
         
-        view.setDate1Label(date1)
-        view.setDate2Label(date2)
-        
         view.date1 = date1
         view.date2 = date2
         view.timeZone = Calendar.current.timeZone
         compare(date1: date1, date2: date2)
-        
-        view.hideDateField()
-        view.hideDatePicker()
-        view.hideTimeZonePicker()
     }
     
     func compare(date1: Date, date2: Date) {
@@ -45,18 +36,6 @@ class TimeZoneMVPPresenterDefault: PresenterBase<TimeZoneMVPView> {
 
 extension TimeZoneMVPPresenterDefault: TimeZoneMVPPresenter {
     
-    func didTapOnDate1Label() {
-        view.showDateField()
-        view.hideDatePicker()
-        view.hideTimeZonePicker()
-    }
-    
-    func didTapOnDate2Label() {
-        view.hideDateField()
-        view.showDatePicker()
-        view.showTimeZonePicker()
-    }
-    
     func didChangeDatePicker(date: Date) {
         guard let date1 = view.date1, let timeZone = view.timeZone else {
             return
@@ -66,7 +45,6 @@ extension TimeZoneMVPPresenterDefault: TimeZoneMVPPresenter {
         componets.timeZone = timeZone
         let date2 = Calendar.current.date(from: componets)!
         compare(date1: date1, date2: date2)
-        view.setDate2Label(date2)
     }
     
     func didChangeTimeZonePicker(timeZone: TimeZone) {
@@ -78,7 +56,6 @@ extension TimeZoneMVPPresenterDefault: TimeZoneMVPPresenter {
         componets.timeZone = timeZone
         let date2 = Calendar.current.date(from: componets)!
         compare(date1: date1, date2: date2)
-        view.setDate2Label(date2)
     }
     
 }

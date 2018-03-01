@@ -6,15 +6,6 @@ protocol TimeZoneMVPView {
     var date2: Date? { get set }
     var timeZone: TimeZone? { get set }
     
-    func setDate1Label(_ date: Date)
-    func setDate2Label(_ date: Date)
-    
-    func hideDateField()
-    func hideDatePicker()
-    func hideTimeZonePicker()
-    func showDateField()
-    func showDatePicker()
-    func showTimeZonePicker()
     func showEqualsInmage()
     func showGreatThanInmage()
     func showLessThanInmage()
@@ -22,9 +13,7 @@ protocol TimeZoneMVPView {
 
 class TimeZoneMVPViewController: ViewControllerWithPresenter<TimeZoneMVPPresenter> {
     
-    @IBOutlet weak var date1Label: UILabel!
     @IBOutlet weak var date1TextField: UITextField!
-    @IBOutlet weak var date2Label: UILabel!
     @IBOutlet weak var date2Picker: UIDatePicker!
     @IBOutlet weak var timeZonePicker: TimeZonePicker!
     @IBOutlet weak var resultImage: UIImageView!
@@ -42,17 +31,6 @@ class TimeZoneMVPViewController: ViewControllerWithPresenter<TimeZoneMVPPresente
     override func viewDidLoad() {
         super.viewDidLoad()
         timeZonePicker.pickerDelegate = presenter
-        
-        date1Label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnDate1Label)))
-        date2Label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapOnDate2Label)))
-    }
-    
-    @objc func didTapOnDate1Label() {
-        presenter.didTapOnDate1Label()
-    }
-    
-    @objc func didTapOnDate2Label() {
-        presenter.didTapOnDate2Label()
     }
     
     @IBAction func didChangeDatePicker(_ sender: UIDatePicker) {
@@ -114,41 +92,9 @@ extension TimeZoneMVPViewController: TimeZoneMVPView {
     
     private var dateFormatter: DateFormatter {
         let df = DateFormatter()
-        df.dateFormat = "dd/MM/yyyy hh:mm Z"
+        df.dateFormat = "dd/MM/yyyy HH:mm Z"
         
         return df
-    }
-    
-    func setDate1Label(_ date: Date) {
-        date1Label.text = dateFormatter.string(from: date)
-    }
-    
-    func setDate2Label(_ date: Date) {
-        date2Label.text = dateFormatter.string(from: date)
-    }
-    
-    func hideDateField() {
-        date1TextField.isHidden = true
-    }
-    
-    func hideDatePicker() {
-        date2Picker.isHidden = true
-    }
-    
-    func hideTimeZonePicker() {
-        timeZonePicker.isHidden = true
-    }
-    
-    func showDateField() {
-        date1TextField.isHidden = false
-    }
-    
-    func showDatePicker() {
-        date2Picker.isHidden = false
-    }
-    
-    func showTimeZonePicker() {
-        timeZonePicker.isHidden = false
     }
     
     func showEqualsInmage() {
