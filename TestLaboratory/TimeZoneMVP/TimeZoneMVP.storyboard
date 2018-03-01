@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xAd-hH-Ucv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Zone MVP-->
+        <scene sceneID="iYU-ln-Pbw">
+            <objects>
+                <viewController title="Time Zone MVP" id="xAd-hH-Ucv" customClass="TimeZoneMVPViewController" customModule="TestLaboratory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Smg-Za-eQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cfj-VC-IZ4">
+                                <rect key="frame" x="16" y="16" width="343" height="587"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qld-wk-7Ap" userLabel="Result">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="88"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDf-wm-tdf">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Equals" translatesAutoresizingMaskIntoConstraints="NO" id="T0k-uA-HfG">
+                                                <rect key="frame" x="0.0" y="24" width="343" height="64"/>
+                                                <color key="tintColor" red="0.0" green="1" blue="0.051855699339533601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="Tfw-KP-NVI"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eww-Ft-Ff3" userLabel="Date 1">
+                                        <rect key="frame" x="0.0" y="104" width="343" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 1: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-rZ-Lc9">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-7M-xVx">
+                                                <rect key="frame" x="0.0" y="24" width="343" height="35"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="didChangeDateField:" destination="xAd-hH-Ucv" eventType="editingChanged" id="ZCw-cw-d6V"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-YP-BPs" userLabel="Date 2">
+                                        <rect key="frame" x="0.0" y="179" width="343" height="408"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzR-uv-ECA">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="l7S-3H-7Vh">
+                                                <rect key="frame" x="0.0" y="24" width="343" height="168"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="541243577.83048999">
+                                                    <!--2018-02-25 99:26:17 a. m. +0000-->
+                                                </date>
+                                                <connections>
+                                                    <action selector="didChangeDatePicker:" destination="xAd-hH-Ucv" eventType="valueChanged" id="5ls-fx-Ofq"/>
+                                                </connections>
+                                            </datePicker>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-aB-yqJ" customClass="TimeZonePicker" customModule="TestLaboratory" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="192" width="343" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oTn-YP-BPs" firstAttribute="leading" secondItem="Cfj-VC-IZ4" secondAttribute="leading" id="384-SM-A59"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTn-YP-BPs" secondAttribute="trailing" id="82r-KX-0VJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qld-wk-7Ap" secondAttribute="trailing" id="EbQ-D4-rbe"/>
+                                    <constraint firstItem="oTn-YP-BPs" firstAttribute="top" secondItem="Cfj-VC-IZ4" secondAttribute="top" constant="179" id="HCa-7x-7Ux"/>
+                                    <constraint firstItem="Qld-wk-7Ap" firstAttribute="leading" secondItem="Cfj-VC-IZ4" secondAttribute="leading" id="IG9-HG-lth"/>
+                                    <constraint firstAttribute="trailing" secondItem="eww-Ft-Ff3" secondAttribute="trailing" id="nNX-nq-TnN"/>
+                                    <constraint firstItem="eww-Ft-Ff3" firstAttribute="leading" secondItem="Cfj-VC-IZ4" secondAttribute="leading" id="xdd-hD-vzI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cfj-VC-IZ4" firstAttribute="leading" secondItem="dvi-yc-jam" secondAttribute="leading" constant="16" id="3h7-va-b98"/>
+                            <constraint firstItem="Cfj-VC-IZ4" firstAttribute="top" secondItem="dvi-yc-jam" secondAttribute="top" constant="16" id="6qX-h1-AJb"/>
+                            <constraint firstItem="dvi-yc-jam" firstAttribute="bottom" secondItem="Cfj-VC-IZ4" secondAttribute="bottom" id="OTG-zH-80E"/>
+                            <constraint firstItem="dvi-yc-jam" firstAttribute="trailing" secondItem="Cfj-VC-IZ4" secondAttribute="trailing" constant="16" id="rCO-rZ-cPC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dvi-yc-jam"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="date1TextField" destination="qCr-7M-xVx" id="cSp-WG-hLC"/>
+                        <outlet property="date2Picker" destination="l7S-3H-7Vh" id="fUp-YZ-snr"/>
+                        <outlet property="resultImage" destination="T0k-uA-HfG" id="U9z-o1-FbE"/>
+                        <outlet property="timeZonePicker" destination="T9l-aB-yqJ" id="2Ry-TT-lwv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxI-8N-rg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Equals" width="137" height="137"/>
+    </resources>
+</document>

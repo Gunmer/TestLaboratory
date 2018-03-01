@@ -7,5 +7,7 @@ target 'TestLaboratory' do
 
   # Pods for TestLaboratory
   pod 'EmojiLog', '~> 4.0.0'
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'ObjectMapper'
 end

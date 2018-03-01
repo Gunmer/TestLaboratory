@@ -18,6 +18,9 @@ class LoginInMSViewController: UIViewController, Loggable, URLSessionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Login with Microsoft"
+        
         do {
             self.applicationContext = try MSALPublicClientApplication(clientId: kClientID, authority: kAuthority)
         } catch {
