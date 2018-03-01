@@ -25,4 +25,10 @@ class ViewController: UIViewController {
         self.present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func didTapOnTimeZoneMVP(_ sender: UIButton) {
+        let timeZoneVC = TimeZoneMVPViewController.initFromStoryboard()
+        let navigationController = NavigationControllerDefault(rootViewController: timeZoneVC)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
 }
