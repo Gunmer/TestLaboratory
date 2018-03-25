@@ -20,7 +20,9 @@ class LoadClassFromStringViewController: ViewControllerWithPresenter<LoadClassFr
         super.viewDidLoad()
 
         okImage.isHidden = true
+        okImage.tintColor = .green
         koImage.isHidden = true
+        koImage.tintColor = .red
     }
     
     @IBAction func didTapOnLoad(_ sender: UIButton) {
