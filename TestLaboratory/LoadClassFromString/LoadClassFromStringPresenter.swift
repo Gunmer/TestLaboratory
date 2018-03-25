@@ -20,8 +20,10 @@ extension LoadClassFromStringPresenterDefault: LoadClassFromStringPresenter {
             return
         }
         
-        //var classNameString = NSStringFromClass(className)
-        if let theClass = NSClassFromString(className) {
+        let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String
+        
+        if let theClass = NSClassFromString("\(appName).\(className)") {
+            
             log.info("\(theClass)")
             view.showOk()
             return

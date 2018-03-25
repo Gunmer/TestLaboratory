@@ -31,4 +31,10 @@ class ViewController: UIViewController {
         self.present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func didTapOnLoadClassFromString(_ sender: UIButton) {
+        let loadClassFromStringVC = LoadClassFromStringViewController.initFromStoryboard()
+        let navigationController = NavigationControllerDefault(rootViewController: loadClassFromStringVC)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
 }

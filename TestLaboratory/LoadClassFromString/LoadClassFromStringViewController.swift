@@ -15,6 +15,8 @@ class LoadClassFromStringViewController: ViewControllerWithPresenter<LoadClassFr
     @IBOutlet weak var koImage: UIImageView!
     
     override func viewDidLoad() {
+        presenter = LoadClassFromStringPresenterDefault()
+        
         super.viewDidLoad()
 
         okImage.isHidden = true
