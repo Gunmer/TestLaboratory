@@ -17,6 +17,10 @@
 		D47B9A23202525DB00776B62 /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47B9A22202525DB00776B62 /* MSAL.framework */; };
 		D47B9A26202526F100776B62 /* LoginInMS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B9A25202526F100776B62 /* LoginInMS.storyboard */; };
 		D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9A272025282E00776B62 /* LoginInMSViewController.swift */; };
+		D49AF01C2066B16B0044DAAD /* LoadClassFromString.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */; };
+		D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */; };
+		D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01F2066C6A00044DAAD /* ClassA.swift */; };
+		D49AF0222066CA5C0044DAAD /* LoadClassFromStringPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF0212066CA5C0044DAAD /* LoadClassFromStringPresenter.swift */; };
 		D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */; };
 		D4ACCF9E2023CBCD002DCFF9 /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */; };
 		D4ACCFA22023D218002DCFF9 /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */; };
@@ -47,6 +51,10 @@
 		D47B9A22202525DB00776B62 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
 		D47B9A25202526F100776B62 /* LoginInMS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginInMS.storyboard; sourceTree = "<group>"; };
 		D47B9A272025282E00776B62 /* LoginInMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInMSViewController.swift; sourceTree = "<group>"; };
+		D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadClassFromString.storyboard; sourceTree = "<group>"; };
+		D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadClassFromStringViewController.swift; sourceTree = "<group>"; };
+		D49AF01F2066C6A00044DAAD /* ClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassA.swift; sourceTree = "<group>"; };
+		D49AF0212066CA5C0044DAAD /* LoadClassFromStringPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadClassFromStringPresenter.swift; sourceTree = "<group>"; };
 		D4ACCF9B2023CB6E002DCFF9 /* DynamicStack.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicStack.storyboard; sourceTree = "<group>"; };
 		D4ACCF9D2023CBCD002DCFF9 /* DynamicStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
 		D4ACCFA12023D218002DCFF9 /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +125,17 @@
 			path = LoginInMS;
 			sourceTree = "<group>";
 		};
+		D49AF01A2066AFCA0044DAAD /* LoadClassFromString */ = {
+			isa = PBXGroup;
+			children = (
+				D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */,
+				D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */,
+				D49AF0212066CA5C0044DAAD /* LoadClassFromStringPresenter.swift */,
+				D49AF01F2066C6A00044DAAD /* ClassA.swift */,
+			);
+			path = LoadClassFromString;
+			sourceTree = "<group>";
+		};
 		D4ACCF9A2023CA83002DCFF9 /* DinamicStackView */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +197,7 @@
 		D4F078A52023C524001976AD /* TestLaboratory */ = {
 			isa = PBXGroup;
 			children = (
+				D49AF01A2066AFCA0044DAAD /* LoadClassFromString */,
 				D42D8FB82042B7DB00A7824B /* TimeZoneMVP */,
 				D4E727F8203793CD004C1508 /* FirebaseDB */,
 				D4ACCF9F2023D1D7002DCFF9 /* Infrastructure */,
@@ -264,6 +284,7 @@
 				D4F078AE2023C524001976AD /* Assets.xcassets in Resources */,
 				D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */,
 				D4F078AC2023C524001976AD /* Main.storyboard in Resources */,
+				D49AF01C2066B16B0044DAAD /* LoadClassFromString.storyboard in Resources */,
 				D4E727F720377D77004C1508 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49AF0222066CA5C0044DAAD /* LoadClassFromStringPresenter.swift in Sources */,
 				D4E7280020382FE9004C1508 /* TaskCell.swift in Sources */,
 				D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */,
+				D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */,
+				D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */,
 				D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */,
 				D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */,
 				D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */,

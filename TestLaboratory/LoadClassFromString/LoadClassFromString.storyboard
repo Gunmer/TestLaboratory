@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cXg-s9-5Sz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load Class From String View Controller-->
+        <scene sceneID="Dbm-XQ-98I">
+            <objects>
+                <viewController id="cXg-s9-5Sz" customClass="LoadClassFromStringViewController" customModule="TestLaboratory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vsd-6W-ogd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ozk-lA-QND">
+                                <rect key="frame" x="16" y="148" width="343" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-Fg-ORd">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCA-Bk-da6">
+                                        <rect key="frame" x="296" y="0.0" width="47" height="30"/>
+                                        <state key="normal" title="Cargar"/>
+                                        <connections>
+                                            <action selector="didTapOnLoad:" destination="cXg-s9-5Sz" eventType="touchUpInside" id="7gr-m3-9A7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c0q-0C-U3z">
+                                <rect key="frame" x="16" y="306" width="343" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="Ym8-PI-AE2">
+                                        <rect key="frame" x="139.5" y="0.0" width="64" height="64"/>
+                                        <color key="tintColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Voc-T1-BwP"/>
+                                            <constraint firstAttribute="width" constant="64" id="uDN-ae-lVK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ko" translatesAutoresizingMaskIntoConstraints="NO" id="BsR-mb-6uV">
+                                        <rect key="frame" x="139.5" y="64" width="64" height="64"/>
+                                        <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BsR-mb-6uV" firstAttribute="height" secondItem="Ym8-PI-AE2" secondAttribute="height" id="gdo-JM-BFv"/>
+                                    <constraint firstItem="BsR-mb-6uV" firstAttribute="width" secondItem="Ym8-PI-AE2" secondAttribute="width" id="jgA-Hj-Ahe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c0q-0C-U3z" firstAttribute="leading" secondItem="3Yg-A0-so0" secondAttribute="leading" constant="16" id="2cf-gI-556"/>
+                            <constraint firstItem="ozk-lA-QND" firstAttribute="leading" secondItem="3Yg-A0-so0" secondAttribute="leading" constant="16" id="DFv-LP-LCX"/>
+                            <constraint firstItem="ozk-lA-QND" firstAttribute="top" secondItem="3Yg-A0-so0" secondAttribute="top" constant="128" id="HZe-DF-lOF"/>
+                            <constraint firstItem="3Yg-A0-so0" firstAttribute="trailing" secondItem="c0q-0C-U3z" secondAttribute="trailing" constant="16" id="Uw9-ag-hmK"/>
+                            <constraint firstItem="3Yg-A0-so0" firstAttribute="trailing" secondItem="ozk-lA-QND" secondAttribute="trailing" constant="16" id="cRW-P4-m1W"/>
+                            <constraint firstItem="c0q-0C-U3z" firstAttribute="top" secondItem="ozk-lA-QND" secondAttribute="bottom" constant="128" id="fxS-dh-bcT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Yg-A0-so0"/>
+                    </view>
+                    <connections>
+                        <outlet property="classNameTextField" destination="BgP-Fg-ORd" id="A41-Ok-Y0C"/>
+                        <outlet property="koImage" destination="BsR-mb-6uV" id="ZbF-yZ-vNP"/>
+                        <outlet property="okImage" destination="Ym8-PI-AE2" id="ElI-jD-uLX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPa-Du-aN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="171.36431784107947"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ko" width="34" height="34"/>
+        <image name="ok" width="34" height="34"/>
+    </resources>
+</document>

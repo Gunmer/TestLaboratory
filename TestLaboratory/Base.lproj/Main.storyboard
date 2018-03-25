@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="36d-7K-QEn">
-                                <rect key="frame" x="16" y="122.5" width="343" height="168"/>
+                                <rect key="frame" x="16" y="122.5" width="343" height="214"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-RY-p9l">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -53,6 +53,13 @@
                                         <state key="normal" title="Time Zone MVP"/>
                                         <connections>
                                             <action selector="didTapOnTimeZoneMVP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOu-h3-IXg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agr-op-j5c">
+                                        <rect key="frame" x="0.0" y="184" width="343" height="30"/>
+                                        <state key="normal" title="Load Class From String"/>
+                                        <connections>
+                                            <action selector="didTapOnLoadClassFromString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Qb-84-0L4"/>
                                         </connections>
                                     </button>
                                 </subviews>
