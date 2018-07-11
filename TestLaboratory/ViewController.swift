@@ -1,38 +1,55 @@
 
 import UIKit
 
+struct Feature {
+    let title: String
+    let destiny: UIViewController
+    
+    func activeNavigation(origin: UIViewController) {
+        let navigationController = NavigationControllerDefault(rootViewController: destiny)
+        origin.present(navigationController, animated: true, completion: nil)
+    }
+}
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var featuresTableView: UITableView!
+    
+    var features = [Feature]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        features.append(Feature(title: "Dynamic Stack", destiny: DynamicStackViewController.initFromStoryboard()))
+        features.append(Feature(title: "Firebase DB", destiny: FirebaseDBViewController.initFromStoryboard()))
+        features.append(Feature(title: "Time Zone", destiny: TimeZoneMVPViewController.initFromStoryboard()))
+        features.append(Feature(title: "Load Class From String", destiny: LoadClassFromStringViewController.initFromStoryboard()))
+        
+        featuresTableView.dataSource = self
+        featuresTableView.delegate = self
     }
 
-    @IBAction func didTapOnDinamicStackViewButton(_ sender: UIButton) {
-        let dynamicStackVC = DynamicStackViewController.initFromStoryboard()
-        let navigationController = NavigationControllerDefault(rootViewController: dynamicStackVC)
-        self.present(navigationController, animated: true, completion: nil)
+}
+
+extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return features.count
     }
     
-    @IBAction func didTaoOnLoginInMS(_ sender: UIButton) {
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeatureCell", for: indexPath)
+        cell.textLabel?.text = features[indexPath.item].title
+        return cell
     }
     
-    @IBAction func didTapOnFirebaseDB(_ sender: UIButton) {
-        let firebaseDB = FirebaseDBViewController.initFromStoryboard()
-        let navigationController = NavigationControllerDefault(rootViewController: firebaseDB)
-        self.present(navigationController, animated: true, completion: nil)
-    }
+}
+
+extension ViewController: UITableViewDelegate {
     
-    @IBAction func didTapOnTimeZoneMVP(_ sender: UIButton) {
-        let timeZoneVC = TimeZoneMVPViewController.initFromStoryboard()
-        let navigationController = NavigationControllerDefault(rootViewController: timeZoneVC)
-        self.present(navigationController, animated: true, completion: nil)
-    }
-    
-    @IBAction func didTapOnLoadClassFromString(_ sender: UIButton) {
-        let loadClassFromStringVC = LoadClassFromStringViewController.initFromStoryboard()
-        let navigationController = NavigationControllerDefault(rootViewController: loadClassFromStringVC)
-        self.present(navigationController, animated: true, completion: nil)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        features[indexPath.item].activeNavigation(origin: self)
     }
     
 }
