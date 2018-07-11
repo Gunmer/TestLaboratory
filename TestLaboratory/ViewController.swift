@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTaoOnLoginInMS(_ sender: UIButton) {
-        let loginInMSVC = LoginInMSViewController.initFromStoryboard()
-        let navigationController = NavigationControllerDefault(rootViewController: loginInMSVC)
-        self.present(navigationController, animated: true, completion: nil)
+        
     }
     
     @IBAction func didTapOnFirebaseDB(_ sender: UIButton) {

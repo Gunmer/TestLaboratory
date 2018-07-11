@@ -14,9 +14,6 @@
 		D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */; };
 		D40EC706204354D300DBFF96 /* PresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC705204354D300DBFF96 /* PresenterView.swift */; };
 		D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */; };
-		D47B9A23202525DB00776B62 /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47B9A22202525DB00776B62 /* MSAL.framework */; };
-		D47B9A26202526F100776B62 /* LoginInMS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47B9A25202526F100776B62 /* LoginInMS.storyboard */; };
-		D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9A272025282E00776B62 /* LoginInMSViewController.swift */; };
 		D49AF01C2066B16B0044DAAD /* LoadClassFromString.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */; };
 		D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */; };
 		D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01F2066C6A00044DAAD /* ClassA.swift */; };
@@ -49,8 +46,6 @@
 		D40EC705204354D300DBFF96 /* PresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterView.swift; sourceTree = "<group>"; };
 		D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeZoneMVP.storyboard; sourceTree = "<group>"; };
 		D47B9A22202525DB00776B62 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
-		D47B9A25202526F100776B62 /* LoginInMS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginInMS.storyboard; sourceTree = "<group>"; };
-		D47B9A272025282E00776B62 /* LoginInMSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInMSViewController.swift; sourceTree = "<group>"; };
 		D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadClassFromString.storyboard; sourceTree = "<group>"; };
 		D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadClassFromStringViewController.swift; sourceTree = "<group>"; };
 		D49AF01F2066C6A00044DAAD /* ClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassA.swift; sourceTree = "<group>"; };
@@ -79,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47B9A23202525DB00776B62 /* MSAL.framework in Frameworks */,
 				8D12FD1A72B3452FD666DBB1 /* Pods_TestLaboratory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,15 +108,6 @@
 				D40EC6FF2042DF9900DBFF96 /* TimeZonePicker.swift */,
 			);
 			path = TimeZoneMVP;
-			sourceTree = "<group>";
-		};
-		D47B9A242025267800776B62 /* LoginInMS */ = {
-			isa = PBXGroup;
-			children = (
-				D47B9A25202526F100776B62 /* LoginInMS.storyboard */,
-				D47B9A272025282E00776B62 /* LoginInMSViewController.swift */,
-			);
-			path = LoginInMS;
 			sourceTree = "<group>";
 		};
 		D49AF01A2066AFCA0044DAAD /* LoadClassFromString */ = {
@@ -201,7 +186,6 @@
 				D42D8FB82042B7DB00A7824B /* TimeZoneMVP */,
 				D4E727F8203793CD004C1508 /* FirebaseDB */,
 				D4ACCF9F2023D1D7002DCFF9 /* Infrastructure */,
-				D47B9A242025267800776B62 /* LoginInMS */,
 				D4ACCF9A2023CA83002DCFF9 /* DinamicStackView */,
 				D4F078A62023C524001976AD /* AppDelegate.swift */,
 				D4F078A82023C524001976AD /* ViewController.swift */,
@@ -226,8 +210,6 @@
 				D4F078A02023C524001976AD /* Frameworks */,
 				D4F078A12023C524001976AD /* Resources */,
 				BC46A7889C170C15CB34637B /* [CP] Embed Pods Frameworks */,
-				0296567D278D1839D78D5B5B /* [CP] Copy Pods Resources */,
-				D47B9A292025323600776B62 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -245,7 +227,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = gunmer;
 				TargetAttributes = {
 					D4F078A22023C524001976AD = {
@@ -277,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47B9A26202526F100776B62 /* LoginInMS.storyboard in Resources */,
 				D4F078B12023C524001976AD /* LaunchScreen.storyboard in Resources */,
 				D4ACCF9C2023CB6E002DCFF9 /* DynamicStack.storyboard in Resources */,
 				D4E727FA20379503004C1508 /* FirebaseDB.storyboard in Resources */,
@@ -292,21 +273,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0296567D278D1839D78D5B5B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		67CA3B6B9928B1935B8FF534 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,20 +317,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestLaboratory/Pods-TestLaboratory-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D47B9A292025323600776B62 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/MSAL.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -378,7 +330,6 @@
 				D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */,
 				D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */,
 				D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */,
-				D47B9A282025282E00776B62 /* LoginInMSViewController.swift in Sources */,
 				D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */,
 				D40EC706204354D300DBFF96 /* PresenterView.swift in Sources */,
 				D40EC7002042DF9900DBFF96 /* TimeZonePicker.swift in Sources */,
@@ -429,6 +380,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -436,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -486,6 +439,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -493,6 +447,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -572,7 +527,7 @@
 				D4F078B42023C524001976AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D4F078B52023C524001976AD /* Build configuration list for PBXNativeTarget "TestLaboratory" */ = {
 			isa = XCConfigurationList;
@@ -581,7 +536,7 @@
 				D4F078B72023C524001976AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MSAL
 import Firebase
 
 @UIApplicationMain
@@ -45,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        MSALPublicClientApplication.handleMSALResponse(url)
         return true
     }
 
