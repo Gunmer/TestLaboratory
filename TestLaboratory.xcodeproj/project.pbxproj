@@ -14,6 +14,8 @@
 		D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */; };
 		D40EC706204354D300DBFF96 /* PresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40EC705204354D300DBFF96 /* PresenterView.swift */; };
 		D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */; };
+		D4785BAA20F6818A002FF950 /* ModelViewViewModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4785BA920F6818A002FF950 /* ModelViewViewModel.storyboard */; };
+		D4785BAC20F68269002FF950 /* ModelViewViewModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4785BAB20F68269002FF950 /* ModelViewViewModelViewController.swift */; };
 		D49AF01C2066B16B0044DAAD /* LoadClassFromString.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */; };
 		D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */; };
 		D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49AF01F2066C6A00044DAAD /* ClassA.swift */; };
@@ -45,6 +47,8 @@
 		D40EC703204353F700DBFF96 /* TimeZoneMVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneMVPPresenter.swift; sourceTree = "<group>"; };
 		D40EC705204354D300DBFF96 /* PresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterView.swift; sourceTree = "<group>"; };
 		D42D8FB92042B84300A7824B /* TimeZoneMVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeZoneMVP.storyboard; sourceTree = "<group>"; };
+		D4785BA920F6818A002FF950 /* ModelViewViewModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModelViewViewModel.storyboard; sourceTree = "<group>"; };
+		D4785BAB20F68269002FF950 /* ModelViewViewModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewViewModelViewController.swift; sourceTree = "<group>"; };
 		D47B9A22202525DB00776B62 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
 		D49AF01B2066B16B0044DAAD /* LoadClassFromString.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadClassFromString.storyboard; sourceTree = "<group>"; };
 		D49AF01D2066C2040044DAAD /* LoadClassFromStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadClassFromStringViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 				D40EC6FF2042DF9900DBFF96 /* TimeZonePicker.swift */,
 			);
 			path = TimeZoneMVP;
+			sourceTree = "<group>";
+		};
+		D4785BA820F6811C002FF950 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				D4785BA920F6818A002FF950 /* ModelViewViewModel.storyboard */,
+				D4785BAB20F68269002FF950 /* ModelViewViewModelViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		D49AF01A2066AFCA0044DAAD /* LoadClassFromString */ = {
@@ -182,6 +195,7 @@
 		D4F078A52023C524001976AD /* TestLaboratory */ = {
 			isa = PBXGroup;
 			children = (
+				D4785BA820F6811C002FF950 /* MVVM */,
 				D49AF01A2066AFCA0044DAAD /* LoadClassFromString */,
 				D42D8FB82042B7DB00A7824B /* TimeZoneMVP */,
 				D4E727F8203793CD004C1508 /* FirebaseDB */,
@@ -266,6 +280,7 @@
 				D42D8FBA2042B84300A7824B /* TimeZoneMVP.storyboard in Resources */,
 				D4F078AC2023C524001976AD /* Main.storyboard in Resources */,
 				D49AF01C2066B16B0044DAAD /* LoadClassFromString.storyboard in Resources */,
+				D4785BAA20F6818A002FF950 /* ModelViewViewModel.storyboard in Resources */,
 				D4E727F720377D77004C1508 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +343,7 @@
 				D4E7280020382FE9004C1508 /* TaskCell.swift in Sources */,
 				D40EC704204353F700DBFF96 /* TimeZoneMVPPresenter.swift in Sources */,
 				D49AF0202066C6A00044DAAD /* ClassA.swift in Sources */,
+				D4785BAC20F68269002FF950 /* ModelViewViewModelViewController.swift in Sources */,
 				D49AF01E2066C2040044DAAD /* LoadClassFromStringViewController.swift in Sources */,
 				D4E72806203883A7004C1508 /* NavigationControllerDefault.swift in Sources */,
 				D4E727FC20382F9A004C1508 /* FirebaseDBViewController.swift in Sources */,

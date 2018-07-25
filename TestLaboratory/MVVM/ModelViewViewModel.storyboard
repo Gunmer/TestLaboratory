@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VuP-OF-g0m">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Model View View Model-->
+        <scene sceneID="4lb-WD-hFT">
+            <objects>
+                <viewController title="Model View View Model" id="VuP-OF-g0m" customClass="ModelViewViewModelViewController" customModule="TestLaboratory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDP-TW-IZ3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="4Is-2H-no4">
+                                <rect key="frame" x="32" y="261.5" width="311" height="144.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text for change" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbp-vl-mbf" customClass="VMLabel" customModule="TestLaboratory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nyh-ij-AyK" customClass="VMTextField" customModule="TestLaboratory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="52.5" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAZ-Ow-z2p" customClass="VMTextField" customModule="TestLaboratory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114.5" width="311" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Is-2H-no4" firstAttribute="leading" secondItem="4jf-Bp-z1u" secondAttribute="leading" constant="32" id="70W-JJ-IPO"/>
+                            <constraint firstItem="4Is-2H-no4" firstAttribute="centerY" secondItem="jDP-TW-IZ3" secondAttribute="centerY" id="9eQ-As-tSN"/>
+                            <constraint firstItem="4jf-Bp-z1u" firstAttribute="trailing" secondItem="4Is-2H-no4" secondAttribute="trailing" constant="32" id="tJB-2j-nlq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4jf-Bp-z1u"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="xbp-vl-mbf" id="KVf-MM-mKX"/>
+                        <outlet property="textField" destination="Nyh-ij-AyK" id="PBO-GI-UmK"/>
+                        <outlet property="textField2" destination="sAZ-Ow-z2p" id="Aj1-c0-Exe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELz-wj-BfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="99"/>
+        </scene>
+    </scenes>
+</document>

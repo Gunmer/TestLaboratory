@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         features.append(Feature(title: "Firebase DB", destiny: FirebaseDBViewController.initFromStoryboard()))
         features.append(Feature(title: "Time Zone", destiny: TimeZoneMVPViewController.initFromStoryboard()))
         features.append(Feature(title: "Load Class From String", destiny: LoadClassFromStringViewController.initFromStoryboard()))
+        features.append(Feature(title: "Model View View Model", destiny: ModelViewViewModelViewController.initFromStoryboard()))
         
         featuresTableView.dataSource = self
         featuresTableView.delegate = self
